@@ -118,7 +118,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell */
         
         var cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "TableCell")
-        cell.textLabel.text = String(self.arrPlayerNumber[indexPath.row])
+        cell.textLabel?.text = String(self.arrPlayerNumber[indexPath.row])
         return cell
     }
     
